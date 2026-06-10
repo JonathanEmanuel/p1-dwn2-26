@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <title>Estilos CSS y JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🪙 Pagos Pendientes</h1>
+    </header>
+    <main>
+        <nav>
+            <a href="index.html" class="btn">Inicio</a>
+        </nav>
+
+        <div class="card">
+            <p>Pagados <span id="sPagados">0</span></p>
+            <p>Pendientes <span id="sPendientes">0</span></p>
+        </div>
+
+        <form action="" class="mt-2 card">
+            <label for="detalle">Detalle</label>
+            <input id="detalle" type="text">
+            
+            <label for="valor">Valor $</label>
+            <input id="valor" type="number">
+
+            <button type="submit" class="btn">Agregar</button>
+        </form>
+        <h4 class="mt-2"> 🤑Lista</h4>
+        <ul id="uLista" class="lista">
+            <li> <strong>Gas</strong>  <span>$45.000</span> </li>
+        </ul>
+    </main>
+    <footer>
+        <p>EMAE | Programación I | 2026</p>
+    </footer>
+    <script src="recorridos.js"></script>
+</body>
+</html>

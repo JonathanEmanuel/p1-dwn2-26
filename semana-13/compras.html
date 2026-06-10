@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <title>🛒 App de compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> 🛒 App de compras</h1>
+    </header>
+    <main>
+       <h2>Total $ <span id="sTotal">0</span></h2>
+       <div>
+            <form class="row">
+                <input id="inputNombre" class="control" type="text" placeholder="Producto">
+                <input id="inputPrecio" type="number" class="control" placeholder="2.000">
+                <button id="btnAgregar" type="submit" class="btn">Agregar</button>
+
+            </form>
+           
+            <div class="error"></div>
+       </div>
+        <ul id="ulLista" class="mt-2 lista">
+   <!--          <li>
+                <span>Tomate</span>
+                <strong>$2.000</strong>
+            </li> -->
+        </ul>
+    </main>
+    <footer>
+        <p>EMAE | Programación I | 2026</p>
+    </footer>
+    <script src="compras.js"></script>
+</body>
+</html>
