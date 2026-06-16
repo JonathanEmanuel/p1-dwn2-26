@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 200px;
+    display: flex;
+    background-color: #010A26;
+}
+
+.col {
+    width: 500px
+}
+header .fondo {
+    background-image: url(images/mouse.jpg);
+    background-size: cover;
+    height: 200px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 26px;
+}
+.text-blue {
+    font-family: "Orbitron", sans-serif;
+    color: #0455BF;
+}
+.btn {
+    background-color: #0455BF;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+main {
+    min-height: 420px;
+}
+
+
+footer {
+    height: 50px;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+}
+h1, h2, h3, h4 {
+    color: white;
+    font-family: "Orbitron", sans-serif;
+}
+
+p, a, li, button {
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    background-color: teal;
+    min-height: 400px;
+    padding: 16px;
+
+}
+
+.card {
+    border: 1px solid #0455BF;
+    background-color: #021F59;
+    width: 200px;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    
+}
+
+.card-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card:hover img {
+    width: 120%;
+}
+.card img {
+    width: 100%;
+    transition: all 1s;
+}
+/* contenedor verde */
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #2f54c2;
+}
+
+input, select {
+    width: 100%;
+    padding: 5px;
+}
