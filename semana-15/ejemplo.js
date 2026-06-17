@@ -14,67 +14,60 @@ const productos = [
 
 // Renderizar Productos
 function renderizarProductos( productos){
-    // Limpiamos el contenedor
     sectionProductos.innerHTML = "";
-    // Recorremos el array
-    for(let i=0; i < productos.length; i++){
+    for( let i=0; i < productos.length; i++){
         const producto = productos[i];
         const divCard = document.createElement('div');
         divCard.classList.add('card');
 
-        const btn = document.createElement('a');
-        btn.textContent = 'Ver más';
-        btn.setAttribute('href', 'detalle.html');
-        btn.classList.add('btn');
-
-        const divImg = document.createElement('div');
-        divImg.classList.add('card-img');
+        const divCardIMG = document.createElement('div');
+        divCardIMG.classList.add('card-img');
+        divCard.appendChild(divCardIMG)
 
         const img = document.createElement('img');
-        img.setAttribute('alt', producto.nombre);
         img.setAttribute('src', producto.foto);
+        img.setAttribute('alt', producto.nombre);
+        divCardIMG.appendChild(img);
 
-        divImg.appendChild(img);
+        const h3 = document.createElement('h4');
+        h3.textContent = producto.nombre;
 
         const h4 = document.createElement('h4');
-        h4.textContent = producto.nombre;
-
-       const h3 = document.createElement('h3');
-        h3.textContent = '$ ' + producto.precio;
-
-
-        divCard.appendChild(divImg);
+        h4.textContent = producto.precio;
         divCard.appendChild(h3);
         divCard.appendChild(h4);
 
-        divCard.appendChild(btn);
+        const aBtn = document.createElement('a');
+        aBtn.setAttribute('href', 'detalle.html?id=' +producto.id);
+        aBtn.classList.add('btn')
+        aBtn.textContent = 'Ver'
 
+        divCard.appendChild(aBtn);
         sectionProductos.appendChild(divCard);
     }
 }
 
 // Filtrar Productos
 function filtrarProductos() {
-    const texto = inputBuscar.value.toLowerCase();
-    const listaAux = [];
-
-    for(let i=0; i < productos.length; i++){
+    const texto = inputBuscar.value;
+    const arrayAux = [];
+    for(let i=0; i< productos.length; i++){
         const producto = productos[i];
-        const nombre = producto.nombre.toLowerCase();
-        if( nombre.includes(  texto )){
-            listaAux.push(producto);
-        }
+        if( producto.nombre.toLowerCase().includes(texto.toLowerCase())){
+            arrayAux.push(producto);
+        } 
+        /*
+        if( producto.nombre.toLowerCase() == texto.toLowerCase()){
+            arrayAux.push(producto);
+        } 
+        */
     }
-
-    renderizarProductos(listaAux);
+    // console.log(arrayAux);
+    renderizarProductos(arrayAux);
 }
 // Ordenar Productos
-function ordenarPorPrecio(){
-    const critero = selectOrdenar.value;
-    console.log(critero);
 
-    // const listaOrdenada = productos.sort( productos)
-}
-renderizarProductos(productos);
-inputBuscar.addEventListener('input', filtrarProductos);
-selectOrdenar.addEventListener('change', ordenarPorPrecio);
+inputBuscar.addEventListener('input', filtrarProductos )
+
+
+renderizarProductos( productos);

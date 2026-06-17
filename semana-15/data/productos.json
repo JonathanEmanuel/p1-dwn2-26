@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "nombre": "Mouse",
+    "precio": 45000,
+    "categoria": "Periféricos",
+    "descripcion": "Mouse óptico USB de alta precisión ideal para oficina y uso diario.",
+    "foto": "images/mouse.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Mouse Logitech",
+    "precio": 75000,
+    "categoria": "Periféricos",
+    "descripcion": "Mouse Logitech ergonómico con sensor de alta precisión y diseño cómodo.",
+    "foto": "images/mouse.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Monitor",
+    "precio": 500000,
+    "categoria": "Monitores",
+    "descripcion": "Monitor Full HD de 24 Pulgadas con excelente calidad",
+        "foto": "images/monitor.jpg"
+  },
+   {
+    "id": 4,
+    "nombre": "Teclado Mecánico",
+    "precio": 65000,
+    "categoria": "Periféricos",
+    "descripcion": "Teclado mecánico con retroiluminación RGB y switches táctiles.",
+    "foto": "images/teclado-mecanico.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Teclado Logitech",
+    "precio": 45000,
+    "categoria": "Periféricos",
+    "descripcion": "Teclado inalámbrico Logitech ideal para trabajo y estudio.",
+    "foto": "images/teclado-logitech.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Notebook Lenovo IdeaPad",
+    "precio": 950000,
+    "categoria": "Notebooks",
+    "descripcion": "Notebook Lenovo con procesador Intel Core i5 y 16GB de RAM.",
+    "foto": "images/notebook-lenovo.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Notebook HP Pavilion",
+    "precio": 1250000,
+    "categoria": "Notebooks",
+    "descripcion": "Notebook HP de alto rendimiento para productividad y multimedia.",
+    "foto": "images/notebook-hp.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Auriculares Gamer",
+    "precio": 85000,
+    "categoria": "Audio",
+    "descripcion": "Auriculares con micrófono incorporado y sonido envolvente.",
+    "foto": "images/auriculares-gamer.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Parlante Bluetooth",
+    "precio": 95000,
+    "categoria": "Audio",
+    "descripcion": "Parlante portátil Bluetooth con batería de larga duración.",
+    "foto": "images/parlante.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Webcam Full HD",
+    "precio": 120000,
+    "categoria": "Accesorios",
+    "descripcion": "Webcam Full HD ideal para videollamadas y streaming.",
+    "foto": "images/webcam.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Disco SSD 1TB",
+    "precio": 140000,
+    "categoria": "Almacenamiento",
+    "descripcion": "Unidad SSD de 1TB con alta velocidad de lectura y escritura.",
+    "foto": "images/ssd.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Pendrive 64GB",
+    "precio": 18000,
+    "categoria": "Almacenamiento",
+    "descripcion": "Memoria USB 3.0 de 64GB para transporte de archivos.",
+    "foto": "images/pendrive.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Impresora Epson EcoTank",
+    "precio": 350000,
+    "categoria": "Impresoras",
+    "descripcion": "Impresora multifunción con sistema de tinta continua.",
+    "foto": "images/impresora.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Router TP-Link",
+    "precio": 90000,
+    "categoria": "Redes",
+    "descripcion": "Router Wi-Fi de doble banda para hogar y oficina.",
+    "foto": "images/router.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Placa de Video RTX 4060",
+    "precio": 850000,
+    "categoria": "Componentes",
+    "descripcion": "Placa gráfica NVIDIA RTX 4060 para gaming y diseño.",
+    "foto": "images/rtx4060.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Procesador Ryzen 7 7700X",
+    "precio": 620000,
+    "categoria": "Componentes",
+    "descripcion": "Procesador AMD Ryzen de última generación para alto rendimiento.",
+    "foto": "images/ryzen7.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Memoria RAM 16GB DDR5",
+    "precio": 95000,
+    "categoria": "Componentes",
+    "descripcion": "Módulo de memoria DDR5 de alta velocidad para PC.",
+    "foto": "images/ram.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Smartwatch Samsung Fit 3",
+    "precio": 180000,
+    "categoria": "Wearables",
+    "descripcion": "Reloj inteligente con monitoreo de actividad física y salud.",
+    "foto": "images/fit3.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Tablet Samsung Galaxy Tab",
+    "precio": 480000,
+    "categoria": "Tablets",
+    "descripcion": "Tablet Android ideal para estudio, lectura y entretenimiento.",
+    "foto": "images/tablet.jpg"
+  },
+  {
+    "id": 20,
+    "nombre": "Smartphone Samsung A15",
+    "precio": 420000,
+    "categoria": "Celulares",
+    "descripcion": "Teléfono móvil Samsung con pantalla AMOLED y gran autonomía.",
+    "foto": "images/a15.jpg"
+  }
+]
