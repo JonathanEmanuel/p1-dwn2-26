@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gamers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data/productos.js"></script>
+    <script src="detalle.js" defer></script>
 </head>
 <body>
-    <h1>Detalle</h1>
+    <header>
+        <div class="col header-text">
+            <h1>Gamers</h1>
+            <p class="text-blue">La mejor tecnología cerca tuyo</p>
+            <a href="#" class="btn">Comprar</a>
+        </div>
+        <div class="col fondo">
+
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+    
+        <section class="contenedor" id="sectionProducto">
+            <div class="row">
+                <div class="col">
+
+                    <img id="imgProducto" src="images/monitor.jpg" class="img-fluid" alt="monitor">
+                </div>
+                <div class="col">
+                    <h2 id="h2Producto">Monitor</h2>
+                    <h4 id="h4Producto">$ 23000</h4>
+                    <hr>
+                    <p id="pProducto" class="text-white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorem sit beatae eaque dignissimos harum nulla corrupti perspiciatis velit voluptatibus, expedita atque distinctio dicta eius nam numquam ex quidem veniam.
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>EMAE | Programación | 2026</p>
+    </footer>
 </body>
 </html>

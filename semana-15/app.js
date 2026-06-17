@@ -3,14 +3,15 @@ const selectCategoria = document.querySelector('#selectCategoria');
 const selectOrdenar = document.querySelector('#selectOrdenar');
 const sectionProductos = document.querySelector('#sectionProductos');
 
-
-const productos = [
-    { id:1, nombre: 'Mouse', precio: 45000, foto: 'images/mouse.jpg'},
+/*
+ const productos = [
+    { id:1, nombre: 'Mouse 2', precio: 45000, foto: 'images/mouse.jpg'},
     { id:2, nombre: 'Mouse Logitech', precio: 75000, foto: 'images/mouse.jpg'},
-    { id:3, nombre: 'Monitor', precio: 500000, foto: 'images/monitor.jpg'},
+    { id:3, nombre: 'Monitor', precio: 12000, foto: 'images/monitor.jpg'},
     { id:4, nombre: 'Teclado', precio: 65000, foto: 'images/teclado.jpg'},
-    { id:5, nombre: 'Teclado Logitech', precio: 45000, foto: 'images/teclado.jpg'}
+    { id:5, nombre: 'Teclado Logitech', precio: 100, foto: 'images/teclado.jpg'}
 ];
+*/
 
 // Renderizar Productos
 function renderizarProductos( productos){
@@ -24,7 +25,7 @@ function renderizarProductos( productos){
 
         const btn = document.createElement('a');
         btn.textContent = 'Ver más';
-        btn.setAttribute('href', 'detalle.html');
+        btn.setAttribute('href', 'detalle.html?id='+producto.id);
         btn.classList.add('btn');
 
         const divImg = document.createElement('div');
@@ -56,24 +57,24 @@ function renderizarProductos( productos){
 // Filtrar Productos
 function filtrarProductos() {
     const texto = inputBuscar.value.toLowerCase();
-    const listaAux = [];
-
-    for(let i=0; i < productos.length; i++){
-        const producto = productos[i];
-        const nombre = producto.nombre.toLowerCase();
-        if( nombre.includes(  texto )){
-            listaAux.push(producto);
-        }
-    }
-
+    const listaAux = productos.filter( p => p.nombre.includes(texto) );
     renderizarProductos(listaAux);
 }
 // Ordenar Productos
 function ordenarPorPrecio(){
     const critero = selectOrdenar.value;
-    console.log(critero);
+    let listaAux = productos;
+    if( critero == 'menor'){
+        listaAux.sort( (a, b) => a.precio - b.precio );
+/*         listaAux.sort( (a, b) => {
+            return a.precio - b.precio
+        }) */
+    } else if ( critero == 'mayor'){
+        listaAux.sort( (a, b) => b.precio - a.precio );
 
-    // const listaOrdenada = productos.sort( productos)
+    }
+
+    renderizarProductos(listaAux);
 }
 renderizarProductos(productos);
 inputBuscar.addEventListener('input', filtrarProductos);

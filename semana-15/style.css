@@ -46,6 +46,28 @@ main {
     min-height: 420px;
 }
 
+nav {
+    background-color: #0455BF;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Orbitron", sans-serif;
+
+}
+
+nav ul li a:hover {
+    
+    color: aliceblue;
+    border-bottom: 2px solid snow;
+
+}
 
 footer {
     height: 50px;
@@ -74,6 +96,9 @@ section {
 
 }
 
+.img-fluid {
+    width: 100%;
+}
 .card {
     border: 1px solid #0455BF;
     background-color: #021F59;
@@ -89,6 +114,10 @@ section {
     
 }
 
+.text-white {
+    padding: 10px;
+    color: azure;
+}
 .card-img {
     height: 200px;
     overflow: hidden;
